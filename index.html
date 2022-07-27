@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <title>Are you want to zakat?</title>
+<head >
+    <   <link rel="stylesheet" href="share.css">
+    <title> Inheritance</title>
+</head>
+<body>
+  
+    <div class="main">
+    <div class="form-box">
+        <h1>Are you want to distribute inheritance</h1>
+ <h5>NAME:<input type="text" id="mytext" value=""></h5>
+    <br>
+    <button onclick=" 
+    let Name = document.getElementById('mytext').value;
+    document.getElementById('heading').innerText = Name">
+  Sir.Click Here </button>
+  <br>
+  <h2 id="heading">Your's Name</h2>
+    <br>
+    <h3>Distribute</h3>
+ <h5> TotalAmount:<input type="number" id="totalAmount"></h5>
+
+<br>
+<button onclick="
+let totalAmount  = document.getElementById('totalAmount').value;
+let shareOfWife =totalAmount/8;
+document.getElementById('getid').innerText = shareOfWife;">Share of Wife</button>
+<br><h4 id="getid">Your Inheritance</h4>
+<br>
+<button onclick="
+let totalAmount  = document.getElementById('totalAmount').value;
+let shareOfWife =totalAmount/8;
+let shareOfSon= totalAmount-shareOfWife;
+document.getElementById('value').innerText = shareOfSon;">Share of Son</button>
+<br>
+<h4 id="value">Your Inheritance</h4>
+<h5><p>Inheritance and property rights
+    Inheritance and individual ownership of property
+    
+    </p></h5>
+    </div>
+</div>
+</body>
+</html>
